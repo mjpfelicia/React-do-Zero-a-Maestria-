@@ -1,64 +1,32 @@
 .App {
   text-align: center;
-  padding: 3rem;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.title_challenge {
+  color: blue;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title_criado {
+  color: rgb(13, 14, 14);
+  font-size: 1.rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input {
+  margin-right: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.box_soma {
+  padding: 1rem 4rem;
+  background: aliceblue;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+.box_NumeroNaTela {
+  padding: 1rem 4rem;
 }
 
-h1 {
-  font-size: 1.8rem;
-  color: #323a4a;
-}
-
-h3 {
-  font-size: 1.3rem;
-  font-weight: 400;
-  color: #607192;
-  ;
-}
-
-span {
-
-  color: rgb(125, 125, 221);
-}
-
-.descrição {
-  padding: 0 6rem;
-  text-align: center;
-  align-items: center;
-  color: #344057;
+.title_box_soma {
+  padding-bottom: 2rem;
 }
