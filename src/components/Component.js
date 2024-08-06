@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 const SomaValores = () => {
     const [valor1, setValor1] = useState('');
     const [valor2, setValor2] = useState('');
-    const [resultado, setResultado] = useState('');
+    const [resultado, setResultado] = useState('')
 
     const handleSoma = () => {
         const soma = parseInt(valor1, 10) + parseInt(valor2, 10);

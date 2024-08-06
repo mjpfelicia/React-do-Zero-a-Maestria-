@@ -3,6 +3,9 @@
 
 }
 
+img {
+  width: 200px;
+}
 
 .title_challenge {
   color: blue;
@@ -17,16 +20,29 @@ input {
   margin-right: 1rem;
 }
 
-.box_soma {
+.box_soma,
+.useState,
+.box_condicional,
+.box_props {
   padding: 1rem 4rem;
   background: aliceblue;
 
+
 }
 
-.box_NumeroNaTela {
+.box_NumeroNaTela,
+.useState,
+.box_img,
+.box_ListeRender {
   padding: 1rem 4rem;
+
+
 }
 
 .title_box_soma {
   padding-bottom: 2rem;
+}
+
+.whapper_someDate {
+  padding-bottom: 2REM;
 }
