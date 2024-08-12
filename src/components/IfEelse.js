@@ -6,7 +6,7 @@ const IfEElse = () => {
     const [name,setName] = useState("Sandra")
 
     return (
-        <div>
+        <div className='box_IfTernario'>
             <h5>If ternário</h5>
             {name === "João" ? (
                 <div>

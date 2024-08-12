@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
 
 }
 
@@ -21,23 +25,45 @@ input {
 }
 
 .box_soma,
-.useState,
+.box_img,
 .box_condicional,
-.box_props {
+.box_IfTernario,
+.box_children,
+.box_message {
   padding: 1rem 4rem;
   background: aliceblue;
+  width: 33%;
+  margin-bottom: 2rem;
 
 
 }
 
 .box_NumeroNaTela,
-.useState,
-.box_img,
-.box_ListeRender {
+.box_useState,
+.box_ListeRender,
+.box_props,
+.box_destructuring,
+.box_executarFunca,
+.box_desafio {
   padding: 1rem 4rem;
-
+  width: 33%;
+  margin-bottom: 2rem;
 
 }
+
+.box_executarFunca button {
+  margin-top: 2rem;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #008CBA;
+}
+
+
 
 .title_box_soma {
   padding-bottom: 2rem;
@@ -45,4 +71,29 @@ input {
 
 .whapper_someDate {
   padding-bottom: 2REM;
+}
+
+.input_soma {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+
+}
+
+.input_soma input {
+  margin-bottom: 0.6rem;
+
+}
+
+.box_destructuring p {
+  color: #008CBA;
+}
+
+.menor {
+  color: red;
+}
+
+.maior {
+  color: #008CBA;
 }

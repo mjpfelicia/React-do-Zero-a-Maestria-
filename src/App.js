@@ -9,12 +9,40 @@ import IfEelse from "./components/IfEelse";
 import ShowUserName from "./components/ShowUserName";
 import CarDetais from './components/CarDetais';
 import { useState } from 'react';
-
+import Fragments from './components/Fragments';
+import Container from "./components/Container"
+import ExecutarFunction from "./components/ExecutarFunction"
+import Message from './components/Message';
+import ChangeMessageState from './components/ChangeMessageState';
+import UserDatails from './components/UserDatails';
 
 
 function App() {
   //const name = "Maria"
-  const [userName] = useState("Pedro")
+  const [userName] = useState("Pedro");
+  const cars = [
+    { id: 1, marca: "Ferrari", color: "Amarelo", newCar: true, km: 0 },
+    { id: 2, marca: "Kia", color: "Branco", newCar: false, km: 15555 },
+    { id: 3, marca: "Renault", color: "Azul", newCar: false, km: 45544 },
+  ];
+
+  function showMessage() {
+    console.log("Evento do componente pai")
+  }
+
+  const [message, setMessage] = useState("");
+
+  const handleMessage = (msg) => {
+    setMessage(msg);
+  };
+  const users = [
+    { id: 1, name: "Sandra", job: "Programadora", age: 48 },
+    { id: 2, name: "Helena", job: "Secretaria", age: 28 },
+    { id: 3, name: "Julio", job: "Aprendiz", age: 15 },
+    { id: 4, name: "Pedro", job: "Atleta", age: 20 }
+
+  ];
+
 
   return (
     <div className="App">
@@ -43,7 +71,48 @@ function App() {
       <ShowUserName name={userName} />
 
       {/* Destructuring em props*/}
-      <CarDetais />
+      <CarDetais marca="vw" km={22222} color="Azul" newCar={false} />
+      {/*Reaproveitamento de component*/}
+      <CarDetais marca="Ford" km={0} color="Preto" newCar={true} />
+      <CarDetais marca="Fiat" km={555} color="Branco" newCar={false} />
+
+      {/*Loop em array de objetos reutilizando os card*/}
+      {cars.map((car) => (
+        <CarDetais
+          key={car.id}
+          marca={car.marca}
+          color={car.color}
+          km={car.km}
+          newCar={car.newCar}
+        />
+      ))}
+
+      {/* fragment*/}
+      <Fragments propFragment="Testando props" />
+
+      {/*prop children*/}
+      <Container value="O Conteúdo">
+        <p>Este é o conteúdo</p>
+      </Container>
+      <Container value="Mudando so o Conteúdo">
+        <h4>Mudando so o conteúdo</h4>
+      </Container>
+
+      {/*executar função */}
+      <ExecutarFunction myFunction={showMessage} />
+
+      {/* state lift */}
+      <Message msg={message} />
+      <ChangeMessageState handleMessage={handleMessage} />
+
+      {/*Desafio*/}
+      {users.map((user) => (
+        <UserDatails
+          key={user.id}
+          name={user.name}
+          jab={user.job}
+          age={user.age} />
+      ))}
 
     </div>
 

@@ -10,7 +10,7 @@ const ManageData = () => {
 
     return (
 
-        <div className='useState'>
+        <div className='box_useState'>
             <h2>useState na prática</h2>
             <div className="whapper_someDate">
                 <p>valor:{someDate}</p>
