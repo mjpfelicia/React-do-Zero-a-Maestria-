@@ -1,0 +1,9 @@
+.title_destructuring {
+    color: #008CBA;
+}
+.box_destructuring ul, li{
+    list-style: none;
+}
+.box_destructuring p {
+    color: #32e8e2;
+  }

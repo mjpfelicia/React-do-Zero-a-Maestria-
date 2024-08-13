@@ -15,7 +15,7 @@ import ExecutarFunction from "./components/ExecutarFunction"
 import Message from './components/Message';
 import ChangeMessageState from './components/ChangeMessageState';
 import UserDatails from './components/UserDatails';
-
+import MyComponent from "./components/MyComponent"
 
 function App() {
   //const name = "Maria"
@@ -113,6 +113,9 @@ function App() {
           jab={user.job}
           age={user.age} />
       ))}
+
+      {/*React e css*/}
+      <MyComponent/>
 
     </div>
 

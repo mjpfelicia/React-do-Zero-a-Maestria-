@@ -1,0 +1,19 @@
+
+
+.paragrafo_component {
+    color: black;
+    background-color: gold;
+}
+.red_title{
+    background-color: black;
+    color: brown;
+    padding: 15px;
+    border:  5px solid red;
+}
+.title{
+    background-color: black;
+    color: white;
+    border:  10px solid #63a2be;
+    padding: 15px;
+
+}

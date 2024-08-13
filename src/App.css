@@ -29,7 +29,8 @@ input {
 .box_condicional,
 .box_IfTernario,
 .box_children,
-.box_message {
+.box_message,
+.box_css {
   padding: 1rem 4rem;
   background: aliceblue;
   width: 33%;
@@ -63,12 +64,6 @@ input {
   background-color: #008CBA;
 }
 
-
-
-.title_box_soma {
-  padding-bottom: 2rem;
-}
-
 .whapper_someDate {
   padding-bottom: 2REM;
 }
@@ -86,14 +81,17 @@ input {
 
 }
 
-.box_destructuring p {
-  color: #008CBA;
-}
-
 .menor {
   color: red;
 }
 
 .maior {
   color: #008CBA;
+}
+.box_css h2{
+  color: red;
+}
+.paragrafo_global{
+  color: green;
+  background-color: black;
 }

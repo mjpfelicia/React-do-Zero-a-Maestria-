@@ -13,7 +13,9 @@ const SomaValores = () => {
 
     return (
         <div className='box_soma'>
-            <h2 className='title_box_soma'>Soma de dois números com Click </h2>
+            <h2 style={
+                { color: "blueviolet", fontSize: "1rem", padding: "2rem",borderTop:"2px solid red" }
+            }>Soma de dois números com Click </h2>
             <div className='input_soma'>
                 <input type="number" className='btn2' placeholder="Digite o primeiro valor" onChange={(e) => setValor1(e.target.value)} />
                 <input type="number" placeholder="Digite o segundo valor" onChange={(e) => setValor2(e.target.value)} />
