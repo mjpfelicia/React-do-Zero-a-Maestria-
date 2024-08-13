@@ -45,7 +45,8 @@ input {
 .box_props,
 .box_destructuring,
 .box_executarFunca,
-.box_desafio {
+.box_desafio,
+.box_module {
   padding: 1rem 4rem;
   width: 33%;
   margin-bottom: 2rem;
@@ -88,10 +89,12 @@ input {
 .maior {
   color: #008CBA;
 }
-.box_css h2{
+
+.box_css h2 {
   color: red;
 }
-.paragrafo_global{
+
+.paragrafo_global {
   color: green;
   background-color: black;
 }

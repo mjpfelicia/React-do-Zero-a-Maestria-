@@ -16,6 +16,7 @@ import Message from './components/Message';
 import ChangeMessageState from './components/ChangeMessageState';
 import UserDatails from './components/UserDatails';
 import MyComponent from "./components/MyComponent"
+import TitleModule from './components/TitleModule';
 
 function App() {
   //const name = "Maria"
@@ -116,6 +117,7 @@ function App() {
 
       {/*React e css*/}
       <MyComponent/>
+      <TitleModule/>
 
     </div>
 

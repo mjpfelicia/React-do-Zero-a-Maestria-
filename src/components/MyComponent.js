@@ -27,6 +27,8 @@ const MyComponent = () => {
             {/* Classe dimálica */}
             <h3 className={redTitle ? "red_title" : "title"}>Este titulo vai ter classe dinâmica</h3>
 
+            {/* Css Modules */}
+
 
 
         </div >
