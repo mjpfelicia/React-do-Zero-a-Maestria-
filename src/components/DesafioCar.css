@@ -1,0 +1,18 @@
+h1 {
+    color: orange;
+}
+
+.car_container div {
+    margin-top: 50px;
+}
+
+.box_desafio h4 {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.box_desafio p {
+    color: dimgray;
+    margin: 0.9rem;
+
+}

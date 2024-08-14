@@ -17,6 +17,7 @@ import ChangeMessageState from './components/ChangeMessageState';
 import UserDatails from './components/UserDatails';
 import MyComponent from "./components/MyComponent"
 import TitleModule from './components/TitleModule';
+import DesafioCar from './components/DesafioCar';
 
 function App() {
   //const name = "Maria"
@@ -26,6 +27,13 @@ function App() {
     { id: 2, marca: "Kia", color: "Branco", newCar: false, km: 15555 },
     { id: 3, marca: "Renault", color: "Azul", newCar: false, km: 45544 },
   ];
+  
+  const myCars = [
+    { name: "Fusca", Km: 10000, color: "Preto" },
+    { name: "Ferrari", Km: 0, color: "Branco" },
+    { name: "Renault", Km: 45555, color: "Vermelho" },
+
+  ]
 
   function showMessage() {
     console.log("Evento do componente pai")
@@ -116,8 +124,14 @@ function App() {
       ))}
 
       {/*React e css*/}
-      <MyComponent/>
-      <TitleModule/>
+      <MyComponent />
+      <TitleModule />
+
+      {myCars.map((car) => (
+
+        <DesafioCar car={car} />
+
+      ))}
 
     </div>
 
