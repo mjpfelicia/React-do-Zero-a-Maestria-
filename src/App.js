@@ -18,6 +18,7 @@ import UserDatails from './components/UserDatails';
 import MyComponent from "./components/MyComponent"
 import TitleModule from './components/TitleModule';
 import DesafioCar from './components/DesafioCar';
+import MyForm from "./components/MyForm"
 
 function App() {
   //const name = "Maria"
@@ -27,7 +28,7 @@ function App() {
     { id: 2, marca: "Kia", color: "Branco", newCar: false, km: 15555 },
     { id: 3, marca: "Renault", color: "Azul", newCar: false, km: 45544 },
   ];
-  
+
   const myCars = [
     { name: "Fusca", Km: 10000, color: "Preto" },
     { name: "Ferrari", Km: 0, color: "Branco" },
@@ -128,11 +129,11 @@ function App() {
       <TitleModule />
 
       {myCars.map((car) => (
-
         <DesafioCar car={car} />
-
       ))}
 
+      {/* Criando formulários */}
+      <MyForm />
     </div>
 
   );
