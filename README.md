@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-            <img src="./public/capturaDeEstudo.png" alt="paisagem"></img>
+            <img src="./public/telaReact.png" alt="paisagem"></img>
 
 
 
