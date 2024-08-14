@@ -133,7 +133,9 @@ function App() {
       ))}
 
       {/* Criando formulários */}
-      <MyForm user={{ name: "Sandra", email: "sandra@gmail.com" }} />
+      <MyForm
+        user={{ name: "Sandra", email: "sandra@gmail.com", bio: "Sou uma estudante", role: "Administrador" }}
+      />
     </div>
 
   );
