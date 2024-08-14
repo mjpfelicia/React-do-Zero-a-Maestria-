@@ -30,9 +30,9 @@ function App() {
   ];
 
   const myCars = [
-    { name: "Fusca", Km: 10000, color: "Preto" },
-    { name: "Ferrari", Km: 0, color: "Branco" },
-    { name: "Renault", Km: 45555, color: "Vermelho" },
+    { name: "Fusca", km: 10000, color: "Preto" },
+    { name: "Ferrari", km: 0, color: "Branco" },
+    { name: "Renault", km: 45555, color: "Vermelho" },
 
   ]
 
