@@ -12,7 +12,7 @@ const DesafioCar = ({ car }) => {
                 <h1>Showroom de carros</h1>
 
                 <h4>{car.name}</h4>
-                <p>Km:{car.Km}</p>
+                <p>km:{car.km}</p>
                 <p>cor:{car.color}</p>
 
             </div>
